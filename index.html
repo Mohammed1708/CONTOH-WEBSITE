@@ -1,0 +1,451 @@
+Sure, I'll tidy up the footer section for you:
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Amal Ichwan Arindo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .hover-effect:hover {
+        transform: translateY(-10px);
+        transition: transform 0.3s ease;
+      }
+      .testimonial-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+      }
+      .testimonial-item {
+        flex: 0 0 20%;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        opacity: 0.5;
+      }
+      .testimonial-item.active {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      .testimonial-item.prev,
+      .testimonial-item.next {
+        transform: scale(0.9);
+      }
+      @media (max-width: 768px) {
+        .testimonial-item {
+          flex: 0 0 100%;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-roboto">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 fixed w-full z-10 top-0">
+      <div class="container mx-auto flex justify-between items-center">
+        <a class="text-white text-2xl font-bold" href="#">
+          Amal Ichwan Arindo
+        </a>
+        <div class="md:hidden">
+          <button class="text-gray-300 focus:outline-none" id="menu-button">
+            <i class="fas fa-bars"> </i>
+          </button>
+        </div>
+        <div class="hidden md:flex space-x-4" id="menu">
+          <a class="text-gray-300 hover:text-white" href="#about"> About </a>
+          <a class="text-gray-300 hover:text-white" href="#services">
+            Services
+          </a>
+          <a class="text-gray-300 hover:text-white" href="#team"> Team </a>
+          <a class="text-gray-300 hover:text-white" href="#testimonials">
+            Testimonials
+          </a>
+          <a class="text-gray-300 hover:text-white" href="#contact">
+            Contact
+          </a>
+        </div>
+      </div>
+      <div class="md:hidden" id="mobile-menu" style="display: none">
+        <a class="block text-gray-300 hover:text-white py-2" href="#about">
+          About
+        </a>
+        <a class="block text-gray-300 hover:text-white py-2" href="#services">
+          Services
+        </a>
+        <a class="block text-gray-300 hover:text-white py-2" href="#team">
+          Team
+        </a>
+        <a
+          class="block text-gray-300 hover:text-white py-2"
+          href="#testimonials"
+        >
+          Testimonials
+        </a>
+        <a class="block text-gray-300 hover:text-white py-2" href="#contact">
+          Contact
+        </a>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white py-20 mt-16">
+      <div class="container mx-auto text-center">
+        <h1 class="text-5xl font-bold mb-4">Welcome to Amal Ichwan Arindo</h1>
+        <p class="text-xl mb-8">
+          Sustainable Employment Agency for Medical, Hospitality Construction,
+          IT Technology & Manufacturing
+        </p>
+        <a
+          class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600"
+          href="#contact"
+        >
+          Get in Touch
+        </a>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="py-20" id="about">
+      <div
+        class="container mx-auto text-center md:text-left md:flex md:items-center"
+      >
+        <div class="md:w-1/2">
+          <h2 class="text-4xl font-bold mb-8 text-center">About Us</h2>
+          <p class="text-lg mb-8">
+            Amal Ichwan Arindo Company, a leading overseas employment service
+            and general trade agency dedicated to helping businesses thrive in
+            today’s competitive landscape. With a team of creative professionals
+            and strategic thinkers, we specialize in Healthcare and Skilled
+            workers solutions that drive brand awareness, increase patient
+            safety, and customer engagement, and boost sales. Our comprehensive
+            range of services includes recruitment, placement, review, and
+            training and more. At Amal Ichwan Arindo Company, we are committed
+            to delivering exceptional results and helping your brand reach its
+            full potential.
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <img
+            alt="An image showing the company office with employees working at their desks"
+            class="mx-auto rounded-lg shadow-lg"
+            height="400"
+            src="https://storage.googleapis.com/a1aa/image/oNWzjIUAlCJ1IVlm7P6mdYTYN2XWMcljL2RRECsqfDlctnBKA.jpg"
+            width="600"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Vision and Mission Section -->
+    <section class="bg-gray-100 py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Vision & Mission</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover-effect">
+            <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+            <p>
+              To be the leading global recruitment partner, empowering
+              professionals to achieve international success while addressing
+              the workforce needs of companies worldwide
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg hover-effect">
+            <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+            <ul class="text-left">
+              <li>
+                1. To bridge the gap between talent and opportunity by
+                connecting skilled professionals with reputable employers
+                globally
+              </li>
+              <li>
+                2. To uphold ethical recruitment practices and deliver
+                exceptional service to our clients and candidates.
+              </li>
+              <li>
+                3. To contribute to economic growth by addressing critical labor
+                shortages across industries
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-20" id="services">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover-effect">
+            <i class="fas fa-user-tie text-4xl text-blue-500 mb-4"> </i>
+            <h3 class="text-2xl font-bold mb-4">Recruitment Solutions</h3>
+            <p>Sourcing skilled professionals across industries.</p>
+            <p>Screening, interviewing, and shortlisting candidates.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg hover-effect">
+            <i class="fas fa-chalkboard-teacher text-4xl text-blue-500 mb-4">
+            </i>
+            <h3 class="text-2xl font-bold mb-4">Training & Development</h3>
+            <p>
+              Specialized training for industry certifications and skill
+              enhancement.
+            </p>
+            <p>Language and cultural orientation for international workers.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg hover-effect">
+            <i class="fas fa-file-contract text-4xl text-blue-500 mb-4"> </i>
+            <h3 class="text-2xl font-bold mb-4">
+              Documentation and Legal Assistance
+            </h3>
+            <p>Handling contracts, compliance, and regulatory requirements.</p>
+            <p>
+              Ensuring candidates and employers meet international labor
+              standards.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg hover-effect">
+            <i class="fas fa-globe text-4xl text-blue-500 mb-4"> </i>
+            <h3 class="text-2xl font-bold mb-4">International Placement</h3>
+            <p>
+              Placement of talent in countries across the Middle East, Europe,
+              Asia, and beyond.
+            </p>
+            <p>Assisting in the visa and work permit process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Approach Section -->
+    <section class="bg-gray-100 py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Our Approach</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="flex flex-col items-center hover-effect">
+            <div
+              class="bg-white p-6 rounded-full shadow-lg w-32 h-32 flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-bullhorn text-4xl text-blue-500"> </i>
+            </div>
+            <h3 class="text-2xl font-bold">Education & Advertising</h3>
+          </div>
+          <div class="flex flex-col items-center hover-effect">
+            <div
+              class="bg-white p-6 rounded-full shadow-lg w-32 h-32 flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-user-check text-4xl text-blue-500"> </i>
+            </div>
+            <h3 class="text-2xl font-bold">Direct Recruitment</h3>
+          </div>
+          <div class="flex flex-col items-center hover-effect">
+            <div
+              class="bg-white p-6 rounded-full shadow-lg w-32 h-32 flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-tools text-4xl text-blue-500"> </i>
+            </div>
+            <h3 class="text-2xl font-bold">Skill Training Upgrade</h3>
+          </div>
+          <div class="flex flex-col items-center hover-effect">
+            <div
+              class="bg-white p-6 rounded-full shadow-lg w-32 h-32 flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-handshake text-4xl text-blue-500"> </i>
+            </div>
+            <h3 class="text-2xl font-bold">Selection & Placement Program</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Section -->
+    <section class="py-20" id="team">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Meet Our Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover-effect">
+            <img
+              alt="Portrait of John Doe, CEO of CompanyName"
+              class="w-32 h-32 mx-auto rounded-full mb-4"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/Y6mNhwn2zQ6tO5TJ4cAYxh5e1ijGVoJDTV7W8CE9u9ybtnBKA.jpg"
+              width="200"
+            />
+            <h3 class="text-2xl font-bold mb-2">John Doe</h3>
+            <p class="text-gray-600">CEO</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg hover-effect">
+            <img
+              alt="Portrait of Jane Smith, CTO of CompanyName"
+              class="w-32 h-32 mx-auto rounded-full mb-4"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/gNDcfbNvRMQjSyeOeN2hmseABOGz2s6ufJuN1HvVFwect2zAF.jpg"
+              width="200"
+            />
+            <h3 class="text-2xl font-bold mb-2">Jane Smith</h3>
+            <p class="text-gray-600">CTO</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg hover-effect">
+            <img
+              alt="Portrait of Mike Johnson, CFO of CompanyName"
+              class="w-32 h-32 mx-auto rounded-full mb-4"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/HOKpwPTSWOIsDRfFneauNGkv9vHmsMMFTAOJ82Gyx517aPDUA.jpg"
+              width="200"
+            />
+            <h3 class="text-2xl font-bold mb-2">Mike Johnson</h3>
+            <p class="text-gray-600">CFO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="bg-gray-100 py-20" id="testimonials">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Testimonials</h2>
+        <div class="testimonial-carousel">
+          <div class="testimonial-item prev">
+            <div class="bg-white p-4 rounded-lg shadow-lg mx-2 relative">
+              <video class="w-full rounded-lg mb-4" controls>
+                <source
+                  src="https://www.w3schools.com/html/mov_bbb.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="testimonial-item active">
+            <div class="bg-white p-4 rounded-lg shadow-lg mx-2 relative">
+              <video class="w-full rounded-lg mb-4" controls>
+                <source
+                  src="https://www.w3schools.com/html/mov_bbb.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="testimonial-item next">
+            <div class="bg-white p-4 rounded-lg shadow-lg mx-2 relative">
+              <video class="w-full rounded-lg mb-4" controls>
+                <source
+                  src="https://www.w3schools.com/html/mov_bbb.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="bg-gray-100 py-20" id="contact">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+        <p class="text-lg mb-8">
+          We'd love to hear from you! Reach out to us using the form below.
+        </p>
+        <form class="max-w-lg mx-auto">
+          <div class="mb-4">
+            <input
+              class="w-full p-3 rounded-lg border border-gray-300"
+              placeholder="Your Name"
+              type="text"
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              class="w-full p-3 rounded-lg border border-gray-300"
+              placeholder="Your Email"
+              type="email"
+            />
+          </div>
+          <div class="mb-4">
+            <textarea
+              class="w-full p-3 rounded-lg border border-gray-300"
+              placeholder="Your Message"
+              rows="5"
+            ></textarea>
+          </div>
+          <button
+            class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600"
+            type="submit"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul>
+            <li class="mb-2">
+              <a class="text-gray-300 hover:text-white" href="#about">
+                About
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-300 hover:text-white" href="#services">
+                Services
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-300 hover:text-white" href="#team"> Team </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-300 hover:text-white" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a class="text-gray-300 hover:text-white" href="#">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+            <a class="text-gray-300 hover:text-white" href="#">
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a class="text-gray-300 hover:text-white" href="#">
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+            <a class="text-gray-300 hover:text-white" href="#">
+              <i class="fab fa-instagram"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+          <p class="text-gray-300">123 Business Street, City, Country</p>
+          <p class="text-gray-300">Email: info@companyname.com</p>
+          <p class="text-gray-300">Phone: +123 456 7890</p>
+        </div>
+        <!-- Map -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Our Location</h3>
+          <iframe
+            allowfullscreen=""
+            class="w-full h-48"
+            frameborder="0"
+            loading="lazy"
+            src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Business+Street,City,Country"
+          >
+          </iframe>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
